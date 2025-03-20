@@ -1,13 +1,23 @@
-p{
-  font-size: 4rem; 
- text-align: center;
- 
-}
-p::after{
-  content: " Please complete";
-  background-color: red;
-  font-size: 40px;
-  padding: 3px;
-  border-radius: 20px 0px 0px 0px;
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.container > a{
+ border: 1px solid red;
+padding: 20px;
+font-size: 23px;
+text-decoration: none;
+color: red;
+transition: all;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
+.container >a:hover{
+background-color: brown;
+color: white;
 }
