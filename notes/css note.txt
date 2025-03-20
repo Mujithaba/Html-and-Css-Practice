@@ -1,0 +1,209 @@
+more detailed not or clear doubts through w3school site css-----------------
+
+learn web kit also
+
+
+
+
+<!-- font --> -
+font-size
+font-family
+font-weight
+text-align
+
+
+
+/* <!-- colors --> */
+rgb
+rgba
+hex : #
+hsl
+
+
+/* <!-- box model --> */
+border
+margin
+padding
+
+
+
+<!-- border details -->
+
+border: 2px solid red border-width:3px 4px 54px 69px;
+  {top,right,bottom,left}
+border-width:3px 9px;
+  {top , bottom-=3 and right ,left =9 }   
+ 
+
+<!-- padding -->
+
+padding;2px 10px;
+   {top bottom =2px and right left = 10px}
+padding :2px 3px 4px 5px;
+  {top,right,bottom,left}
+
+  <!-- backgtound -->
+   backgtound-color
+   backgtound-image:url();
+   backgtound-repeat:no-repeat;
+   backgtound-size:cover;
+   backgtound-position:;
+   background-attachment:fixed;{scrolling time just covering image effect geting}
+   background:url() no-repeat center / cover fixed; 
+   {not recommed the above style , repeat,postion,size,attachment is that structure}
+mix-blend-mode:overlay;{hue,saturation,multiply,difference}
+background-blend-mode:multiply,screen;
+
+
+   <--gradiant :-->
+
+   {linear and radial gradiant} properties
+to top, to bottom ,to left ,to right are the adjustments of the gradiant
+    background-image: linear-gradient(to top,rgba(255, 0, 0, 0.166), rgba(0, 0, 255, 0.188)),
+    url("https://media.istockphoto.com/id/1444224749/photo/malabar-grey-hornbill-having-fruits-with-beautiful-background-at-coorg-karnataka-india.jpg?s=2048x2048&w=is&k=20&c=K3j0k3TVALjynGKpzekkAOfxjofEsullIhCpgTdWoWw=");
+  
+  
+    background-image: radial-gradient(rgba(255, 255, 0, 0.21),rgba(0, 128, 0, 0.242)),
+    url("https://media.istockphoto.com/id/1444224749/photo/malabar-grey-hornbill-having-fruits-with-beautiful-background-at-coorg-karnataka-india.jpg?s=2048x2048&w=is&k=20&c=K3j0k3TVALjynGKpzekkAOfxjofEsullIhCpgTdWoWw=");
+  
+  
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+
+  <----filter --->
+
+   background-image:
+    url("https://media.istockphoto.com/id/1444224749/photo/malabar-grey-hornbill-having-fruits-with-beautiful-background-at-coorg-karnataka-india.jpg?s=2048x2048&w=is&k=20&c=K3j0k3TVALjynGKpzekkAOfxjofEsullIhCpgTdWoWw=");
+
+properties:-  
+  
+filter:blur(px)
+filter:brightness(%)
+      : contrast(%)
+ filter: opacity(70%)
+ {check gradiant style :webgradiant.com,gradiant.com}
+check more in the w3school site
+
+
+<--display-->
+display:inline;
+":inline-block;
+":block;
+"": none;
+
+When to Use What?
+✔ Use inline when elements should stay in a line, like links <a> or <span>.
+✔ Use block when you need a full-width section (paragraphs, divs, headers).
+✔ Use inline-block when you need elements side by side but still want to control size (buttons,
+
+
+<--shadow-->
+values (x axis ,y axis, blurness, color)
+box-shadow: 10px 10px 10px red;
+or 
+text-shadow:"";
+
+<--position-->
+position:relative
+"":absolute;
+"":fixed;
+"":sticky;
+
+<--flex-->
+display:flex
+flex-directio:column
+justify-content:end,start,space-around
+flex-wrap:wrap;
+align-items:flex-start,""-end,center,space-...,
+align-content:stretch; default
+order :numbers eg1,2,3,4; {for aligh child divs }
+align-self: center;{gve to child div for specify one child only, it override the align-items property}
+flex-grow:number for child elements;
+flex-shrink:number;
+flex-flow: row wrap:writen together in shorthand
+
+
+
+<--Grid--->
+display:grid;
+grid-template-columns:120px 120px 120px ..;(width)
+{shorthand form:- grid-template-colums:repeat(3,100px)}
+grid-template-rows:120px 120px 120px ...;(height)
+{shorthand form:- grid-template-rows:repeat(3,100px)}
+ grid-gap:20px;
+ fr:friction units for dimentions of the scrreen size increase and decrease;
+
+ grid-column-start: 1;
+ grid-column-end: 4;
+shorthand form{grid-column: 1 / 4;}
+ grid-row-start: ;
+ grid-row-end: ;
+shorthand form {grid-column: 1 / 4;} 
+ grid-template-columns:100px minmax(200px,1fr) 100px;
+{adjust some element fixed size for some condition}
+
+grid areas}=>
+  grid-template-areas:
+  "h h h h"
+  "m m s s"
+  "m m a a" /* Fixed */
+  "f f f f";
+
+  header{
+    grid-area: h;
+    
+  }
+  main{
+    grid-area:m;
+  }
+
+  
+section{
+  grid-area: s;
+}
+  
+  aside{
+  grid-area: a;
+  }
+
+  footer{
+    grid-area: f;
+  }
+
+
+  grid-area: row-start / column-start / row-end / column-end;
+grid-area: 1 / 2 / 4 /6 ;
+
+
+pseudo class:=> is().::after(),::before(),:not()
+
+
+
+--variables creation---
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size: 16px;
+}
+
+body {
+  color: var(--primary-color);
+  font-size: var(--font-size);
+}
+
+
+
+<----------------------------->
+some things of the css
+
+<div class="container">
+    <div>Direct Child (Styled ✅)</div>
+    <section>
+        <div>Nested Child (Not Styled ❌)</div>
+    </section>
+</div>
