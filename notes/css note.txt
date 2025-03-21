@@ -226,6 +226,116 @@ color: white;
 }
 
 
+<--------------Media query------------>
+
+🎭 Common Media Query Breakpoints
+Device Type	Screen Width
+Small Phones	max-width: 480px
+Tablets	max-width: 768px
+Laptops	max-width: 1024px
+Large Screens	max-width: 1200px
+
+
+🔹 How Media Queries Work
+A media query consists of:
+@media rule – Defines that a media query is being used.
+Media type (screen, print, etc.) – Specifies the type of device.
+Media features (like max-width or orientation) – Define conditions for applying styles
+
+---------------
+@media (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+ Explanation:
+
+The background changes to light green only if the screen width is between 480px and 768px.
+
+-----------------------
+Orientation-Based Media Queries
+Use orientation: portrait or orientation: landscape to style elements based on device orientation.
+
+3️⃣ Example: Changing Styles in Portrait Mode
+css
+Copy
+Edit
+@media (orientation: portrait) {
+  body {
+    background-color: pink;
+  }
+}
+✅ Use Case: Useful for mobile apps that behave differently in portrait vs. landscape mode.
+
+---------------------------
+Advanced Media Queries
+5️⃣ Example: Dark Mode Support 🌙
+Detects if the user has enabled dark mode in their system settings.
+
+css
+Copy
+Edit
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+✅ Use Case: Automatically switches to dark mode styling.
+-------------------------
+mparison Table
+Media Query	Applies To	Use Case
+@media (max-width: 600px)	All media types	Responsive design across screens and print
+@media screen	Only screens (monitors, mobiles, tablets)	Excludes print styles
+@media print	Printed pages	Printer-friendly layouts
+@media only screen	Modern screens only	Avoids issues in old browsers
+
+-------------
+body{
+  font-size: 4em;
+  background-color: rgb(92, 172, 112);
+  border: 2px dotted rgb(191, 31, 31);
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+<---------Animation ----------->
+
+.container > div {
+  width: 300px;
+  height: 300px;
+background-color: brown;
+animation-name: animationSample;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+
+
+}
+
+@keyframes animationSample{
+  0% {
+    transform: scale(1.2);
+  }
+
+  34% {
+    background-color: cyan;
+    transform: rotate(49deg);
+
+  }
+
+  60% {
+    transform: skew(50deg);
+    background-color: greenyellow;
+  }
+
+
+}
+
+
 
 <----------------------------->
 some things of the css
