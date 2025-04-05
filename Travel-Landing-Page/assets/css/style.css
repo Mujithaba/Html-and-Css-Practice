@@ -1,0 +1,133 @@
+/* universal selectrs */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    padding: 100px 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 80px 50px;
+  }
+}
+
+/* universal selectrs */
+
+/* header section start */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header h3 {
+  font-size: 40px;
+}
+
+.header nav ul {
+  display: flex;
+}
+.header nav ul a {
+  margin: 0px 25px;
+}
+.header nav ul li a:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+  .header h3 {
+    font-size: 22px;
+    margin: 14px 9px;
+  }
+}
+
+/* header section end */
+
+/* here section start */
+
+.hero-section {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+
+.hero-section .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+}
+.hero-section h1{
+    font-weight: 800;
+    font-size: 75px;
+    margin-bottom: 18px;
+    color: #000000;
+}
+
+.hero-section .browse-all-places{
+    border-radius: 4px;
+    background-color: #d70672;
+    padding: 20px 45px;
+    font-size: 23px;
+    text-align: center;
+    transition: color 2s ease-in, background-color 2s ease-out;
+}
+.hero-section .browse-all-places:hover{
+    color: white;
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:800px) {
+    .hero-section{
+     min-width: 600px;
+    }
+    
+    .hero-section h1{
+        font-size: 50px;
+    }
+}
+/* here section end */

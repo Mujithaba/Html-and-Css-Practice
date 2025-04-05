@@ -1,11 +1,23 @@
-body{
-  font-size: 4em;
-  background-color: rgb(92, 172, 112);
-  border: 2px dotted rgb(191, 31, 31);
+.one{
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  box-sizing: content-box;
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
-  body {
-    background-color: yellow;
-  }
+.two{
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
