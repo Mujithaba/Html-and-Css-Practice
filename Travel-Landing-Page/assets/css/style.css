@@ -84,9 +84,7 @@ hr {
   margin: 0px 25px;
   font-size: 23px;
 }
-.header nav ul a:hover{
-  border-bottom: 2px solid #920b51;
-}
+
 .header nav ul li a:first-child {
   margin-left: 0;
 }
