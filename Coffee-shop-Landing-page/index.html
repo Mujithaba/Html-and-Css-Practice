@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header class="header">
+      <nav class="nav-bar">
+        <img src="./../css/logo.png" alt="coffee-shop-logo" class="logo" />
 
-    <!-- Navigation Bar -->
-    <nav class="navbar-coffee">
-        <h1>Logo</h1>
-
-        <!-- Navigation Links -->
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="nav-ul">
+          <li>
+            <a href="#"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Menu</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Store</span></a>
+          </li>
+          <li>
+            <a href="#"><span>About</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Contact</span></a>
+          </li>
         </ul>
-
-        <!-- Search Bar -->
-        <div class="search-container">
-            <input type="search" placeholder="Search..." class="searchNav">
-            <button class="searchBtn">Search</button>
+        <div>
+          <input type="search" class="search" placeholder="enter item" />
+          <button class="search-btn"><i class="fa fa-search"></i></button>
         </div>
-    </nav>
+      </nav>
+    </header>
 
-    <section class="header">
-        <img class="header-img" src="https://burst.shopifycdn.com/photos/laptop-coffee.jpg?width=925&format=pjpg&exif=0&iptc=0" alt="header-coffeeImgage">
-     
-        <h1>Start your day with a coffee,<br> It's gives you wings</h1>
-    </section>
-
-    <main class="content-section">
-        <div class="cards">
-            <div class="card">ddd</div>
-            <div class="card">ddd</div>
-            <div class="card">ddd</div>
-            <div class="card">ddd</div>
+    <main>
+      <section class="hero-section">
+        <ul>
+            <li style="background-image: url(./images/hero-s2.avif);"></li>
+            <li style="background-image: url(./images/hero-s1.avif);"></li>
+          <li style="background-image: url(./images/hero-s3.avif);"></li>
+        </ul>
+        <img src="./images/hero-img.avif" alt="" class="hero-img">
+        <div class="hero-div">
+          <h2 >Explore Coffees</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            voluptate debitis laudantium quis sed, asperiores alias animi
+            consectetur, dolorem necessitatibus, quam est deserunt explicabo
+            minima accusantium quos maxime mollitia doloribus?
+          </p>
+          <button class="hero-btn">Shop Now</button>
         </div>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
